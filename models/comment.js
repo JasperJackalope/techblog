@@ -45,7 +45,17 @@ Comment.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'comment'
+    modelName: 'comment',
+    getterMethods: {
+      created_at() {
+        const date = this.getDataValue('created_at');
+        return date ? date.toLocaleString() : null;
+      },
+      updated_at() {
+        const date = this.getDataValue('updated_at');
+        return date ? date.toLocaleString() : null;
+      }
+    }
   }
 );
 

@@ -1,0 +1,27 @@
+[
+    {
+        "title": "D'oh",
+        "content": "Marge, where's my donut?",
+        "user_id": 1
+    },
+    {
+        "title": "I Don't Know",
+        "content": "You probably ate it.",
+        "user_id": 2
+    },
+    {
+        "title": "Eat My...",
+        "content": "Caramba!",
+        "user_id": 3
+    },
+    {
+        "title": "If you need me...",
+        "content": "I'll be in my room.",
+        "user_id": 4
+    },
+    {
+        "title": "Confession",
+        "content": "I shot Mr. Burns!",
+        "user_id": 5
+    }
+]

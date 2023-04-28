@@ -1,26 +1,18 @@
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
+const apiRoutes = require('./api/index.js');
+const homeRoutes = require('./homeRoutes.js');
+const dashboardRoutes = require('./dashboardRoutes.js');
 
-const userController = require('./api/usercontroller');
-const postController = require('./api/postcontroller');
-const commentController = require('./api/commentcontroller');
 
-router.get('/users', userController.getUsers);
-router.get('/users/:id', userController.getUserById);
-router.post('/users', userController.createUser);
-router.put('/users/:id', userController.updateUser);
-router.delete('/users/:id', userController.deleteUser);
+router.use('/api', apiRoutes);
+router.use('/dashboard', dashboardRoutes);
+router.use('/', homeRoutes);
 
-router.get('/posts', postController.getPosts);
-router.get('/posts/:id', postController.getPostById);
-router.post('/posts', postController.createPost);
-router.put('/posts/:id', postController.updatePost);
-router.delete('/posts/:id', postController.deletePost);
 
-router.get('/comments', commentController.getComments);
-router.get('/comments/:id', commentController.getCommentById);
-router.post('/comments', commentController.createComment);
-router.put('/comments/:id', commentController.updateComment);
-router.delete('/comments/:id', commentController.deleteComment);
+router.use((req, res) => {
+    res.status(404).end();
+    console.log('Cannot connect to server.');
+});
+
 
 module.exports = router;

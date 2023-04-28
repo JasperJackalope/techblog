@@ -1,38 +1,27 @@
-// Get the input fields from the login formform
-const usernameInput = document.getElementById('username');
-const passwordInput = document.getElementById('password');
-
-// Add an event listener to the login form
-document.getElementById('loginForm').addEventListener('submit', (event) => {
-  // Prevent the default form submission behavior
+async function loginFormHandler(event) {
   event.preventDefault();
 
-  // Get the user's input
-  const username = usernameInput.value;
-  const password = passwordInput.value;
+  const username = document.querySelector('#username-login').value.trim();
+  const password = document.querySelector('#password-login').value.trim();
 
-  // Validate the input
-  if (!username || !password) {
-    alert('Please enter both username and password.');
-    return;
-  }
+  if (username && password) {
+      const response = await fetch('/api/users/login', {
+          method: 'post',
+          body: JSON.stringify({
+              username,
+              password
+          }),
+          headers: {
+              'Content-Type': 'application/json'
+          }
+      });
 
-  // Send a request to the server to validate the user's credentials
-  fetch('/api/auth/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ username, password }),
-  })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(response.statusText);
+      if (response.ok) {
+          document.location.replace('/dashboard');
+      } else {
+          alert(response.statusText);
       }
-      else {  window.location.href = '/';}
-      return response.json();
-    })
-    .catch((error) => {
-      alert(`Login failed: ${error.message}`);
-    });
-});
+  }
+}
+
+document.querySelector('.login-form').addEventListener('submit', loginFormHandler);

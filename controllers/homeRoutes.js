@@ -1,11 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const {
-    User,
-    Post,
-    Comment
-} = require('../models');
-
+const {User, Post, Comment} = require('../models');
 
 router.get('/', (req, res) => {
     Post.findAll({
@@ -111,10 +106,8 @@ router.get('/signup', (req, res) => {
     res.render('signup');
 });
 
-
 router.get('*', (req, res) => {
     res.status(404).send("Can't go there!");
 })
-
 
 module.exports = router;

@@ -34,32 +34,12 @@ Comment.init(
         key: 'id'
       }
     },
-    // created_at: {
-    //   type: DataTypes.DATE,
-    //   allowNull: true,
-    //   defaultValue: DataTypes.NOW
-    // },
-    // updated_at: {
-    //   type: DataTypes.DATE,
-    //   allowNull: true,
-    //   defaultValue: DataTypes.NOW
-    // }
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
     modelName: 'comment',
-    // getterMethods: {
-    //   created_at() {
-    //     const date = this.getDataValue('created_at');
-    //     return date ? date.toLocaleString() : null;
-    //   },
-    //   updated_at() {
-    //     const date = this.getDataValue('updated_at');
-    //     return date ? date.toLocaleString() : null;
-    //   }
-    // }
   }
 );
 

@@ -30,6 +30,6 @@ My cousin and coder Jack Baddle was great help with this project, providing me w
 
 ## Links
 
-HEROKU:
+HEROKU: https://intense-castle-33112.herokuapp.com/
 
-GITHUB:
+GITHUB: https://github.com/JasperJackalope/techblog 

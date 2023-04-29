@@ -7,7 +7,7 @@
         "updated_at": ""
     },
     {
-        "comment_text": "::Grumble::",
+        "comment_text": "I disagree with this.",
         "user_id": 2,
         "post_id": 2,
         "created_at": "",
@@ -21,14 +21,14 @@
         "updated_at": ""
     },
     {
-        "comment_text": "Jeremy's Iron",
+        "comment_text": "If you need me, I'll be in my room.",
         "user_id": 4,
         "post_id": 4,
         "created_at": "",
         "updated_at": ""
     },
     {
-        "comment_text": "::Suck Suck::",
+        "comment_text": "Don't ask me, I'm just a baby.",
         "user_id": 5,
         "post_id": 5,
         "created_at": "",

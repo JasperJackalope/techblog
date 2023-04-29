@@ -24,7 +24,7 @@ This project has no license.
 
 ## Contributions
 
-My cousin and coder Jack Baddle was great help with this project, providing me with starter code to felsh out the handlebars. Cameron Gibson also assisted with walking me through a few concepts. OwainIslam on GitHub also provided started code. 
+My cousin and coder Jack Baddle was great help with this project, providing me with starter code to felsh out the handlebars. Cameron Gibson also assisted with walking me through a few concepts. OwainIslam on GitHub also provided started code (helpers and smoother JS routes for posting). 
 
 ## Links
 

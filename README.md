@@ -26,7 +26,9 @@ This project has no license.
 
 ## Contributions
 
-My cousin and coder Jack Baddle was great help with this project, providing me with starter code to felsh out the handlebars. Cameron Gibson also assisted with walking me through a few concepts. OwainIslam on GitHub also provided started code (helpers and smoother JS routes for posting). 
+My cousin and coder Jack Battle was great help with this project, providing me with starter code to flesh out the handlebars. Cameron Gibson also assisted with walking me through a few concepts. OwainIslam on GitHub also provided started code (helpers and smoother JS routes for posting). 
+
+Updated: May 2, 2023. Tutoring session with Cameron Gibson helped me refine the routes further. Also used example code from my classmate Josh to reformat handlebars.
 
 ## Links
 

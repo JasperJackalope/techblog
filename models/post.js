@@ -16,7 +16,7 @@ Post.init(
             allowNull: false,
         },
         content: {
-            type: DataTypes.TEXT, // Use TEXT instead of VARCHAR
+            type: DataTypes.TEXT,
             allowNull: false,
           },
         date_created: {

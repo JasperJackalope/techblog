@@ -15,9 +15,10 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        contents: {
-            type: DataTypes.STRING(1000),
-        },
+        content: {
+            type: DataTypes.TEXT, // Use TEXT instead of VARCHAR
+            allowNull: false,
+          },
         date_created: {
             type: DataTypes.DATE,
             allowNull: false,

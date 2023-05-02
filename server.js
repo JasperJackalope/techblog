@@ -29,6 +29,18 @@ const sess = {
   })
 };
 
+app.get('/public/css/jass.css', (req, res) => {
+  res.setHeader('Content-Type', 'text/css');
+  // send the css file
+  res.sendFile(__dirname + '/public/css/jass.css');
+});
+
+app.get('/public/css/style.css', (req, res) => {
+  res.setHeader('Content-Type', 'text/css');
+  // send the css file
+  res.sendFile(__dirname + '/public/css/style.css');
+});
+
 app.use(session(sess));
 
 // Inform Express.js on which template engine to use

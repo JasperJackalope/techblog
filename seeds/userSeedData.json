@@ -1,22 +1,27 @@
 [
     {
         "username": "Homer",
+        "email": "hzdkv@example.com",
         "password": "password"
     },
     {
         "username": "Marge",
+        "email": "lyhxr@example.com",
         "password": "password"
     },
     {
         "username": "Bart",
+        "email": "dycjh@example.com",
         "password": "password"
     },
     {
         "username": "Lisa",
+        "email": "efpyi@example.com",
         "password": "password"
     },
     {
         "username": "Maggie",
+        "email": "maggie@example.com",
         "password": "password"
     }
 ]
